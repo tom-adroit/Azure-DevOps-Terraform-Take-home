@@ -167,17 +167,13 @@ Please keep answers honest and concise. We are interested in how you think, not 
 
 # Submission
 
-You can submit your solution in either of the following ways:
+You can submit your solution in the following way:
 
-## GitHub (preferred)
+## GitHub
 
 - Push your changes to a public repo in your own GitHub account.
-- Send us the link.
-
-## Zip file
-
-- Zip the repo folder (including `infra/`, `QUESTIONS.md`, and optionally the `.git` folder).
-- Email it to: **hello@adroitcc.io**
+- If you do not wish to make the repo public, add 'tom-adroit' & 'pkhural' to the authorised users of a private repo.
+- Send us the link to hello@adroitcc.io
 
 ---
 
