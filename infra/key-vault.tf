@@ -10,7 +10,7 @@ resource "azurerm_key_vault" "one_ring" {
 
   network_acls {
     default_action = "Deny"
-    bypass         = ["AzureServices"]
+    bypass         = "AzureServices"
     ip_rules       = var.key_vault_allowed_ipv4
 
     virtual_network_subnet_ids = [

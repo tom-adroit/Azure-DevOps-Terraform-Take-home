@@ -22,7 +22,6 @@ resource "azurerm_app_service" "api" {
   resource_group_name       = azurerm_resource_group.middleearth[each.key].name
   location                  = azurerm_resource_group.middleearth[each.key].location
   app_service_plan_id       = azurerm_app_service_plan.api[each.key].id
-  virtual_network_subnet_id = azurerm_subnet.app[each.key].id
   https_only                = true
 
   site_config {
@@ -41,4 +40,13 @@ resource "azurerm_app_service" "api" {
   }
 
   tags = each.value.tags
+}
+
+resource "azurerm_app_service_virtual_network_swift_connection" "api" {
+  for_each = local.environment_settings
+  
+  app_service_id    = azurerm_app_service.api[each.key].name
+  subnet_id           = azurerm_subnet.app[each.key].id
+
+  depends_on = [azurerm_app_service.api]
 }
