@@ -171,7 +171,7 @@ You can submit your solution in the following way:
 
 ## GitHub
 
-- Push your changes to a public repo in your own GitHub account.
+- Push your changes to a public repo in your own GitHub account (not a PR to this repo).
 - If you do not wish to make the repo public, add 'tom-adroit' & 'pkhural' to the authorised users of a private repo.
 - Send us the link to hello@adroitcc.io
 
